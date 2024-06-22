@@ -4,7 +4,7 @@ WORKDIR /build
 COPY . .
 RUN mvn clean verify
 
-FROM eclipse-temurin:11-jre@sha256:8f0a99f12dfc7ff2524f1550ffd6ab432597cd20417413b46cb96c7b9ec2b7f0
+FROM eclipse-temurin:21.0.3_9-jre@sha256:562b439f2a4b4c5a3db7e5a0f562891ffb84a988e733b440b496bdecf4b0a1f7
 
 # renovate: datasource=github-releases depName=apangin/jattach
 ENV JATTACH_VERSION=1.5
